@@ -1,7 +1,0 @@
-#これはgitignoreです。
-#.DS_Store .swn .swo .swpをGitの管理外にする。
-#--------------------
-/.DS_Store
-/.swn
-/.swo
-/swp
