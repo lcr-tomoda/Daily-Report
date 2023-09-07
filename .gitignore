@@ -1,0 +1,8 @@
+#これは、gitignoreです。
+#DS_Store .swn .swo .swpをgitの管理外にする。
+#---------------------
+.DS_Store
+.swn
+.swo
+.sw
+test2.txt
