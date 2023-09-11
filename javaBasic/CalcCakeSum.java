@@ -22,12 +22,10 @@ public class CalcCakeSum {
 			case "ショートケーキ":
 				price = 320;
 				sum = sum + (price * cnt);
-
 				break;
 			case "モンブラン":
 				price = 350;
 				sum = sum + (price * cnt);
-
 				break;
 			case "チョコレートケーキ":
 				price = 370;
