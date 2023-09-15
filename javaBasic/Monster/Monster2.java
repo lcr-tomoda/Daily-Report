@@ -1,11 +1,12 @@
-package churimon;
+package churimon.Monster;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.regex.Pattern;
 
-public class Monster3 {
-	// フィールド----------------------(サブクラスから参照できないためprivate修飾子外した)
+public class Monster2 {
+
+	// フィールド----------------------
 	String character; // 種族
 	String trainer; // トレーナー
 	String name; // なまえ
@@ -19,7 +20,7 @@ public class Monster3 {
 	String wazaDmgRate; // わざ(ダメージ倍率)
 
 	// コンストラクタ①------------------
-	Monster3() {
+	Monster2() {
 		character = "(unknown)"; // 種族
 		trainer = "(wild)"; // トレーナー
 		name = "(noname)"; // なまえ
@@ -34,7 +35,7 @@ public class Monster3 {
 	}
 
 	// コンストラクタ②------------------
-	Monster3(String trnr, String nm) {
+	Monster2(String trnr, String nm) {
 		character = "(unknown)"; // 種族
 		trainer = trnr; // トレーナー
 		name = nm; // なまえ
@@ -48,8 +49,8 @@ public class Monster3 {
 		wazaDmgRate = "1.0"; // わざ(ダメージ倍率)
 	}
 
-	// コンストラクタ③------------------(レベル見合った値セットする)
-	Monster3(String trnr, String nm, int defLv) {
+	// コンストラクタ③------------------
+	Monster2(String trnr, String nm, int defLv) {
 		character = "(unknown)"; // 種族
 		trainer = trnr; // トレーナー
 		name = nm; // なまえ
@@ -90,7 +91,7 @@ public class Monster3 {
 
 	// ステータスを表示する(ステーサス情報を文字列で返す)
 	public String getStatus() {
-		String msg = "[" + this.name + " lv" + this.lv + " HP" + this.hp + "/" + this.hpMax + "]";
+		String msg = this.name + "lv" + this.lv + "HP" + this.hp + "/" + this.hpMax;
 		return msg;
 	}
 
@@ -129,58 +130,4 @@ public class Monster3 {
 		}
 		return actDmg;
 	}
-
-	// getter/setter------------------------------------
-	public String getCharacter() {
-		return this.character;
-	}
-
-	public void setCharacter(String charNm) {
-		this.character = charNm;
-	}
-
-	public String getTrainer() {
-		return this.trainer;
-	}
-
-	public String getName() {
-		return this.name;
-	}
-
-	public int getLv() {
-		return this.lv;
-	}
-
-	public void setLv(int lv) {
-		this.lv = lv;
-	}
-
-	public int getHp() {
-		return this.hp;
-	}
-
-	public int getAtk() {
-		return this.atk;
-	}
-
-	public int getDef() {
-		return this.def;
-	}
-
-	public int getSpd() {
-		return this.spd;
-	}
-
-	public int getHpMax() {
-		return this.hpMax;
-	}
-
-	public String getWazaNm() {
-		return this.wazaNm;
-	}
-
-	public String getWazaDmgRate() {
-		return this.wazaDmgRate;
-	}
-
 }

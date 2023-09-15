@@ -1,22 +1,22 @@
-package churimon;
+package churimon.Monster;
 
 public class Hitokake extends Monster3 {
 
 	//Monster3クラスを継承
 	// コンストラクタ①------------------
-	Hitokake() {
+	public Hitokake() {
 		super();
 		super.setCharacter("ヒトカケ");
 	}
 
 	// コンストラクタ②------------------
-	Hitokake(String trnr, String nm) {
+	public Hitokake(String trnr, String nm) {
 		super(trnr, nm);
 		super.setCharacter("ヒトカケ");
 	}
 
 	// コンストラクタ③------------------(レベル見合った値セットする)
-	Hitokake(String trnr, String nm, int defLv) {
+	public Hitokake(String trnr, String nm, int defLv) {
 		super(trnr, nm, defLv);
 		super.setCharacter("ヒトカケ");
 	}

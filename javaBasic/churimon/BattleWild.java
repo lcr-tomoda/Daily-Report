@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import churimon.Monster.Fushigiyade;
+import churimon.Monster.Hitokake;
+
 class BattleWild {
 
 	//フィールド（定数）

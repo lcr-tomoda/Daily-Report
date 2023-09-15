@@ -1,4 +1,4 @@
-package churimon;
+package churimon.Monster;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

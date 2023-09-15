@@ -1,21 +1,21 @@
-package churimon;
+package churimon.Monster;
 
 public class Fushigiyade extends Monster3 {
 
 	// コンストラクタ①------------------
-	Fushigiyade() {
+	public Fushigiyade() {
 		super();
 		super.setCharacter("フシギヤデ");
 	}
 
 	// コンストラクタ②------------------
-	Fushigiyade(String trnr, String nm) {
+	public Fushigiyade(String trnr, String nm) {
 		super(trnr, nm);
 		super.setCharacter("フシギヤデ");
 	}
 
 	// コンストラクタ③------------------(レベル見合った値セットする)
-	Fushigiyade(String trnr, String nm, int defLv) {
+	public Fushigiyade(String trnr, String nm, int defLv) {
 		super(trnr, nm, defLv);
 		super.setCharacter("フシギヤデ");
 	}
